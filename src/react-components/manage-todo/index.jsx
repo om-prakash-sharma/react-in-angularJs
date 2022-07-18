@@ -14,7 +14,7 @@ const ManageTodo = ({ todo, addTodo, updateTodo }) => {
     }, [todo]);
 
     return <div>
-        <h3>{isUpdate ? 'Update' : 'Add'} Todo</h3>
+        <h3>{isUpdate ? 'Update' : 'Add'} Todo Using ReactJS</h3>
         <textarea value={todoText} onChange={(e) => setTodoText(e.target.value)}> {todoText} </textarea>
         <button className='actionBtn' type='button' onClick={() => {
             const data = {

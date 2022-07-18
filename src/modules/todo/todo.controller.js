@@ -4,7 +4,7 @@ angular
     .module('demoApp')
     .controller('TodoController', ['$scope', function ($scope) {
 
-        $scope.title = "Manage Todo";
+        $scope.title = "Manage Todo Using AngularJS";
         $scope.todo = {};
         $scope.todoList = [];
         $scope.addTodo = addTodoFn;
