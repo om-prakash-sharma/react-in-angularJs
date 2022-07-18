@@ -1,0 +1,19 @@
+<div ng-controller="TodoController" class="todo">
+
+    <div class="list-todo">
+        <h3>{{title}}</h3>
+        <div class="todo-list" ng-repeat="todo in todoList">
+            <div class="row">
+                <span>{{todo.text}}</span>
+                <div class="action">
+                    <button ng-click="editTodo(todo)">Edit</button>
+                    <button ng-click="deleteTodo(todo.id)">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="manage-todo">
+        <manage-todo id="manage-todo" page="manage-todo" todo="todo" add-todo="addTodo" update-todo="updateTodo">
+        </manage-todo>
+    </div>
+</div>

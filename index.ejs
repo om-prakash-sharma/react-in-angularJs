@@ -1,0 +1,29 @@
+<html lang="en" ng-app="demoApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+
+    <%if (htmlWebpackPlugin.options.inject==false && htmlWebpackPlugin.files.css.length> 0) { %>
+        <link href="build/<%= htmlWebpackPlugin.files.css %>" rel="stylesheet">
+        <% } %>
+</head>
+
+<body>
+    <!-- start angular route area -->
+    <div ui-view></div>
+
+    <!-- end angular route area -->
+
+    <!-- load webpack build -->
+    <%if (htmlWebpackPlugin.options.inject==false && htmlWebpackPlugin.files.js.length> 0) { %>
+        <script defer src="build/<%= htmlWebpackPlugin.files.js %>"></script>
+        <% } %>
+
+            <!-- load webpack build end -->
+</body>
+
+
+</html>

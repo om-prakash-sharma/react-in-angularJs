@@ -1,0 +1,27 @@
+h3{
+    text-align: center;
+}
+
+
+textarea{
+    width: calc(100% - 30px);
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+}
+
+button.actionBtn{
+    height: 40px;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    background: #057ddd;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+}
+button.actionBtn:hover{
+    color: #057ddd;
+    background: #fff;
+}
