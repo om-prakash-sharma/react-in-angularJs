@@ -11,6 +11,7 @@ angular
             $stateProvider
                 .state('index', {
                     url: '/',
+                    abstract: true,
                     templateUrl: 'src/modules/layout/layout.html'
                 })
                 .state('index.todo', {
