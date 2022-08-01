@@ -1,0 +1,46 @@
+.login-wrapper {
+    height: calc(100% - 110px);
+
+    h3 {
+        margin: 0px;
+        padding: 0px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 10%;
+        align-items: center;
+        justify-content: center;
+
+        input {
+            height: 50px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 400px;
+            margin-bottom: 30px;
+            padding-left: 15px;
+        }
+
+        input[type="submit" i] {
+            height: 50px;
+            width: 100px;
+            border: 1px solid;
+            border-radius: 5px;
+            color: #fff;
+            background: #057ddd;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type="submit" i]:hover {
+            color: #057ddd;
+            background: #fff;
+        }
+    }
+}

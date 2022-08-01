@@ -22,11 +22,11 @@ angular
                         pageTitle: 'Todo List',
                     }
                 })
-                .state('index.create-todo', {
-                    url: 'todo/:id',
-                    template: '<react-page id="create-user" page="create-user"></react-page>',
+                .state('index.login', {
+                    url: 'login',
+                    template: '<react-page id="user-login" page="user-login"></react-page>',
                     data: {
-                        pageTitle: 'Manage Todo'
+                        pageTitle: 'Login'
                     }
                 });
 
@@ -37,5 +37,5 @@ angular
             });
 
             // if route not found then redirect to /todo
-            $urlRouterProvider.otherwise('/todo');
+            $urlRouterProvider.otherwise('/login');
         }]);

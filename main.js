@@ -16,6 +16,7 @@ import './src/app';
 import './src/routes';
 
 // Import Directive
+import "./src/directives/react-page.directive";
 import "./src/directives/manage-todo.directive";
 
 // Import controller
